@@ -1,15 +1,23 @@
 #include "main.h"
-
 /**
- * main - check the code
+ * puts_half - prints half of a string
+ * @str: char to check
  *
- * Return: Always 0.
+ * Return: 0 is success
  */
-int main(void)
+void puts_half(char *str)
 {
-	char *str;
+	int string = 0, n;
 
-	str = "0123456789";
-	puts_half(str);
-	return (0);
+	while (str[string] != '\0')
+		string++;
+	if (string + 1 % 2 != '0')
+		n = (string - 1) / 2;
+	else
+		n = (string / 2);
+	n++;
+
+	for (string = n; str[string] != '\0'; string++)
+	_putchar(str[string]);
+	_putchar('\n');
 }
