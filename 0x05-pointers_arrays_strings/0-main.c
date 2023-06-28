@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int _strlen(char *);
+void puts_half(char *);
 
 /**
  * main - check the code for Holberton School students.
@@ -10,10 +10,8 @@ int _strlen(char *);
 int main(void)
 {
 	char *str;
-	int len;
 
 	str = "Holberton!";
-	len = _strlen(str);
-	printf("%d\n", len);
+	puts_half(str);
 	return (0);
 }
