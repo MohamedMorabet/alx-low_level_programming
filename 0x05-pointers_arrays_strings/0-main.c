@@ -1,17 +1,18 @@
+#include "main.h"
 #include <stdio.h>
 
-void puts_half(char *);
-
 /**
- * main - check the code for Holberton School students.
+ *main - check the code
  *
- * Return: Always 0.
+ *Return: Always 0.
  */
 int main(void)
 {
-	char *str;
+	int n;
 
-	str = "Holberton!";
-	puts_half(str);
+	n = 402;
+	printf("n=%d\n", n);
+	reset_to_98(&n);
+	printf("n=%d\n", n);
 	return (0);
 }
